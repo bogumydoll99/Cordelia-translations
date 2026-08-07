@@ -1,11 +1,4 @@
-/* =========================================
-   CORDÉLIA TRANSLATIONS
-   Luxury Burgundy & Gold Design
-   ========================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap');
-
-/* ---------- GENERAL ---------- */
 
 * {
     margin: 0;
@@ -14,488 +7,307 @@
 }
 
 body {
-    font-family: "Cormorant Garamond", Georgia, serif;
-    background: #f8f1ee;
-    color: #4d0b1c;
-    line-height: 1.6;
+    font-family: 'Cormorant Garamond', serif;
+    background: #fffaf8;
+    color: #5b0d25;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-/* ---------- NAVIGATION ---------- */
+/* =========================
+   HEADER
+========================= */
 
 header {
-    background: #3b0615;
-    border-bottom: 1px solid #d7a84b;
-    position: relative;
-    z-index: 10;
+    width: 100%;
+    background: #4b071b;
+    padding: 20px 7%;
 }
 
 nav {
-    max-width: 1200px;
-    margin: auto;
-    padding: 18px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    color: #f6d58a;
-    font-size: 23px;
+    color: #f5d9a6;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 .menu {
     display: flex;
-    gap: 32px;
+    gap: 30px;
 }
 
 .menu a {
-    color: #f8e8c2;
+    color: #f8e6c5;
+    text-decoration: none;
     font-size: 17px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .menu a:hover {
-    color: #d9a441;
+    color: #e5ad4f;
 }
 
-
-/* ---------- HERO ---------- */
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    min-height: 600px;
-    padding: 80px 20px 90px;
+    min-height: 430px;
+    background: linear-gradient(
+        135deg,
+        #4b071b,
+        #72152f,
+        #5b0d25
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
+    padding: 70px 20px;
+
     position: relative;
     overflow: hidden;
-
-    background:
-        radial-gradient(circle at center, #711b32 0%, #570b20 45%, #350512 100%);
-    
-    color: #fff3d0;
-}
-
-/* Decorative flowers */
-
-.hero::before,
-.hero::after {
-    content: "❀";
-    position: absolute;
-    font-size: 150px;
-    color: rgba(190, 85, 100, 0.18);
-    z-index: 0;
 }
 
 .hero::before {
-    left: 20px;
-    top: 90px;
+    content: "✦";
+    position: absolute;
+    top: 55px;
+    color: #f1c875;
+    font-size: 28px;
 }
 
 .hero::after {
-    right: 20px;
-    bottom: 50px;
+    content: "✦";
+    position: absolute;
+    bottom: 45px;
+    color: #f1c875;
+    font-size: 22px;
 }
-
-
-/* Small decorative line */
-
-.hero h1::before {
-    content: "✦ ───────── ❧ ✦ ❧ ───────── ✦";
-    display: block;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 17px;
-    color: #e9bd63;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-}
-
-
-/* Main website name */
 
 .hero h1 {
-    position: relative;
-    z-index: 1;
-
-    font-family: "Great Vibes", cursive;
-    font-size: clamp(70px, 9vw, 125px);
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(65px, 8vw, 105px);
     font-weight: 400;
-    line-height: 1.1;
-
-    color: #f8df9b;
+    color: #f7d98f;
 
     text-shadow:
-        0 2px 5px rgba(0,0,0,0.4),
-        0 0 20px rgba(232,183,81,0.25);
+        0 2px 4px #3b0615,
+        0 0 15px rgba(247, 217, 143, 0.25);
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-
-
-/* Subtitle */
 
 .hero p {
-    position: relative;
-    z-index: 1;
-
-    font-size: 22px;
-    font-weight: 500;
-    color: #fff1d0;
-
+    color: #fff4df;
+    font-size: 21px;
     margin-bottom: 30px;
 }
 
-
-/* ---------- SEARCH ---------- */
+/* =========================
+   SEARCH
+========================= */
 
 .search {
-    position: relative;
-    z-index: 2;
-
-    width: min(720px, 90%);
-    margin: 0 auto;
+    display: flex;
+    width: min(600px, 90%);
+    height: 55px;
 }
 
 .search input {
+    flex: 1;
     width: 100%;
-    height: 62px;
+    border: 2px solid #f1d79d;
+    border-radius: 30px;
+    padding: 0 25px;
 
-    border-radius: 40px;
-
-    border: 2px solid #e4b958;
-
-    background: #fffaf7;
-
-    padding: 0 30px;
-
-    font-family: "Cormorant Garamond", serif;
-    font-size: 19px;
-
-    color: #4d0b1c;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
 
     outline: none;
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,0.25),
-        0 0 0 4px rgba(228,185,88,0.12);
+    background: #fffdfb;
+    color: #4b071b;
 }
 
 .search input::placeholder {
-    color: #8c7c78;
+    color: #9a8790;
 }
 
 .search input:focus {
-    border-color: #f2cf72;
-    box-shadow:
-        0 5px 25px rgba(0,0,0,0.3),
-        0 0 0 5px rgba(228,185,88,0.15);
+    border-color: #d69b3b;
 }
 
-
-/* ---------- SECTIONS ---------- */
+/* =========================
+   SECTIONS
+========================= */
 
 .section {
-    padding: 75px 30px;
+    padding: 70px 7%;
     text-align: center;
+    background: #fffaf8;
 }
-
-.section:nth-of-type(2) {
-    background: #f8f1ee;
-}
-
-.section:nth-of-type(3) {
-    background: #f1e4df;
-}
-
-
-/* Section titles */
 
 .section h2 {
-    font-family: "Cormorant Garamond", serif;
-
-    font-size: 48px;
-    font-weight: 600;
-
-    color: #700d28;
-
-    margin-bottom: 15px;
+    font-size: 43px;
+    font-weight: 500;
+    color: #72152f;
+    margin-bottom: 18px;
 }
 
 .section h2::after {
-    content: "──── ❧ ✦ ❧ ────";
+    content: "  ✦  ❧  ✦  ";
     display: block;
-
-    color: #d9a84d;
-
-    font-size: 18px;
-
-    margin-top: 5px;
+    color: #dca94f;
+    font-size: 22px;
+    margin-top: 8px;
 }
 
+/* =========================
+   EXPLORE GENRES
+========================= */
 
-/* ---------- NOVELS GRID ---------- */
+.genres {
+    background: #f4e9e5;
+}
+
+.genre-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.genre-buttons a {
+    text-decoration: none;
+    color: #72152f;
+    border: 1px solid #dca94f;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background: #fffaf8;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.genre-buttons a:hover {
+    background: #72152f;
+    color: #f8dfad;
+}
+
+/* =========================
+   NOVEL CARDS
+========================= */
 
 .grid {
-    max-width: 1200px;
-    margin: 45px auto 0;
-
     display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(210px, 1fr));
-
-    gap: 25px;
-
-    text-align: left;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
-
-/* ---------- NOVEL CARD ---------- */
-
 .card {
-    background: #fffaf7;
-
-    border: 1px solid #e4c89b;
-
-    border-radius: 14px;
-
+    background: white;
+    border-radius: 15px;
     overflow: hidden;
 
-    box-shadow:
-        0 5px 18px rgba(75, 15, 30, 0.10);
+    box-shadow: 0 8px 25px rgba(91, 13, 37, 0.12);
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
-
-    box-shadow:
-        0 14px 30px rgba(75, 15, 30, 0.20);
+    box-shadow: 0 15px 30px rgba(91, 13, 37, 0.2);
 }
-
-
-/* Novel image */
 
 .card img {
     width: 100%;
-    height: 290px;
-
+    height: 300px;
     object-fit: cover;
-
-    display: block;
 }
-
-
-/* Card content */
 
 .card-content {
     padding: 20px;
-
-    text-align: center;
 }
 
-.card-content h3 {
-    font-family: "Cormorant Garamond", serif;
-
+.card h3 {
     font-size: 24px;
-    line-height: 1.2;
-
-    color: #5c0b20;
-
+    color: #5b0d25;
     margin-bottom: 8px;
 }
 
-.card-content p {
-    color: #9b304d;
-
-    font-size: 16px;
-
+.card p {
+    color: #8b6d77;
     margin-bottom: 18px;
 }
 
-
-/* ---------- READ BUTTON ---------- */
-
 .read-btn {
     display: inline-block;
-
-    padding: 10px 25px;
-
-    border-radius: 30px;
-
-    background: #7b102c;
-
-    border: 1px solid #d9a84d;
-
-    color: #fff2ce;
-
-    font-family: "Cormorant Garamond", serif;
-
-    font-size: 17px;
-
-    transition: 0.3s ease;
+    background: #72152f;
+    color: #f8dfad;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    transition: 0.3s;
 }
 
 .read-btn:hover {
-    background: #4b0719;
-
-    color: #f7d67e;
-
-    transform: translateY(-2px);
+    background: #4b071b;
 }
 
-
-/* ---------- GENRES ---------- */
-
-.genres {
-    max-width: 1000px;
-
-    margin: 40px auto;
-
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 15px;
-}
-
-.genre {
-    padding: 10px 25px;
-
-    border: 1px solid #d9a84d;
-
-    border-radius: 30px;
-
-    color: #650c25;
-
-    background: #fff8f2;
-
-    transition: 0.3s ease;
-}
-
-.genre:hover {
-    background: #72102a;
-
-    color: #ffe7a6;
-}
-
-
-/* ---------- FOOTER ---------- */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    background: #350512;
-
-    color: #f3d99c;
-
+    background: #3d0617;
+    color: #f1d79d;
     text-align: center;
-
     padding: 35px 20px;
-
     font-size: 16px;
-
-    border-top: 1px solid #c99538;
 }
 
-footer::before {
-    content: "────── ❧ ✦ ❧ ──────";
+/* =========================
+   MOBILE
+========================= */
 
-    display: block;
+@media (max-width: 700px) {
 
-    color: #d8a84d;
-
-    margin-bottom: 12px;
-
-    font-size: 18px;
-}
-
-
-/* ---------- MOBILE ---------- */
-
-@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
 
     nav {
         flex-direction: column;
-
-        gap: 12px;
-
-        padding: 15px;
+        gap: 15px;
     }
 
     .menu {
         gap: 15px;
-
         flex-wrap: wrap;
-
         justify-content: center;
     }
 
-    .menu a {
-        font-size: 15px;
-    }
-
     .hero {
-        min-height: 520px;
-
-        padding-top: 65px;
+        min-height: 400px;
     }
 
     .hero h1 {
-        font-size: 70px;
+        font-size: 65px;
     }
 
     .hero p {
         font-size: 18px;
     }
 
-    .search input {
-        height: 55px;
-
-        font-size: 17px;
-    }
-
     .section h2 {
-        font-size: 40px;
-    }
-
-    .grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-
-        gap: 15px;
-    }
-
-    .card img {
-        height: 240px;
-    }
-}
-
-
-@media (max-width: 480px) {
-
-    .hero h1 {
-        font-size: 55px;
-    }
-
-    .hero h1::before {
-        font-size: 12px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .card img {
-        height: 320px;
+        font-size: 34px;
     }
 }
