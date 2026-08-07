@@ -1,1 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f8f5f5;
+    color: #2b1a1f;
+}
+
+/* Header */
+
+header {
+    background: #5b1725;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #e8c7ce;
+}
+
+/* Hero */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #5b1725,
+        #7b2638
+    );
+
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+#search {
+    width: 90%;
+    max-width: 550px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Novels */
+
+.novels {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.novels h2 {
+    font-size: 30px;
+    color: #5b1725;
+    margin-bottom: 30px;
+}
+
+/* Novel Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(220px, 1fr)
+    );
+    gap: 25px;
+}
+
+/* Footer */
+
+footer {
+    background: #3a1019;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
