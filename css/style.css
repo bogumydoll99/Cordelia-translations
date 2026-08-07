@@ -1,7 +1,15 @@
-/* =========================
-   CORDÉLIA TRANSLATIONS
-   Main Style
-========================= */
+/* =====================================================
+   CORDELIA TRANSLATIONS
+   Luxury Chinese Novel Translation Website
+   ===================================================== */
+
+
+/* ================= GOOGLE FONTS ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+
+/* ================= GENERAL ================= */
 
 * {
     margin: 0;
@@ -9,30 +17,31 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: #f8f4f2;
-    color: #4b0d1b;
+    font-family: "Cormorant Garamond", serif;
+    background: #faf7f7;
+    color: #3b101b;
 }
 
 
-/* =========================
-   NAVIGATION
-========================= */
+/* ================= HEADER ================= */
 
-.navbar {
-    background: #280611;
-    border-bottom: 1px solid #9c6a55;
-    padding: 18px 0;
+.top-header {
+    width: 100%;
+    background: #5b0d1d;
+    padding: 18px 6%;
+    border-bottom: 1px solid rgba(255, 220, 190, 0.2);
 }
+
 
 .nav-container {
-    width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 
     display: flex;
@@ -40,180 +49,245 @@ body {
     align-items: center;
 }
 
+
 .nav-logo {
-    color: #f7dfb0;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    color: #fff4e8;
+    text-decoration: none;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: 700;
 }
 
-.menu {
+
+.navigation {
     display: flex;
     gap: 35px;
 }
 
-.menu a {
-    color: #f7dfb0;
+
+.navigation a {
+    color: #fff4e8;
     text-decoration: none;
-    font-size: 16px;
+
+    font-size: 17px;
+    font-weight: 600;
 
     transition: 0.3s;
 }
 
-.menu a:hover {
-    color: white;
+
+.navigation a:hover {
+    color: #e7b9a2;
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* ================= HERO ================= */
 
 .hero {
+
     min-height: 500px;
 
+    position: relative;
+
     display: flex;
+    flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
     text-align: center;
 
+    overflow: hidden;
+
     background:
         radial-gradient(
             circle at center,
-            #741d35 0%,
-            #520f23 45%,
-            #300713 100%
+            #8c243d 0%,
+            #681124 45%,
+            #430914 100%
         );
 
-    position: relative;
-    overflow: hidden;
+    color: white;
+
+    padding: 80px 20px;
 }
 
 
-/* Decorative flowers / light effect */
+/* decorative glow */
 
 .hero::before {
-    content: "❀";
-    position: absolute;
-    left: 40px;
-    top: 70px;
+    content: "";
 
-    font-size: 120px;
-    color: rgba(205, 137, 128, 0.12);
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(203, 86, 105, 0.18),
+            transparent 70%
+        );
+
+    pointer-events: none;
 }
+
+
+/* floral-like decoration */
 
 .hero::after {
-    content: "❀";
+    content: "❧";
+
     position: absolute;
-    right: 40px;
-    bottom: 50px;
 
-    font-size: 140px;
-    color: rgba(205, 137, 128, 0.12);
+    left: 5%;
+    top: 18%;
+
+    font-size: 150px;
+
+    color: rgba(226, 137, 144, 0.12);
+
+    transform: rotate(-20deg);
+
+    pointer-events: none;
 }
 
 
-.hero-content {
-    position: relative;
-    z-index: 2;
+.top-decoration {
+    color: #f2d0b3;
 
-    width: 90%;
-    max-width: 1000px;
+    font-size: 23px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+
+    opacity: 0.95;
 }
 
 
-.ornament {
-    color: #e8bd79;
-    font-size: 38px;
-    margin-bottom: 10px;
+.bottom-decoration {
+    margin-top: 25px;
+
+    color: #f2d0b3;
+
+    font-size: 20px;
 }
 
+
+/* ================= MAIN TITLE ================= */
 
 .hero h1 {
-    color: #f8dfb0;
 
-    font-size: 70px;
+    position: relative;
 
-    font-weight: normal;
+    z-index: 2;
 
-    letter-spacing: 2px;
+    font-family: "Allura", cursive;
+
+    font-size: clamp(70px, 8vw, 125px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #fff0dc;
 
     text-shadow:
-        0 0 10px rgba(255, 220, 170, 0.4);
+        0 2px 8px rgba(0,0,0,0.25),
+        0 0 25px rgba(255, 210, 180, 0.15);
+
+    margin: 0;
 }
 
 
-.gold-line {
-    width: 400px;
-    height: 2px;
+/* ================= SUBTITLE ================= */
 
-    margin: 18px auto;
+.hero-subtitle {
 
-    background: linear-gradient(
-        to right,
-        transparent,
-        #d7a65f,
-        transparent
-    );
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 25px;
+
+    font-size: 23px;
+
+    font-weight: 500;
+
+    color: #fff2e8;
+
+    letter-spacing: 0.5px;
 }
 
 
-.hero p {
-    color: #f4e6d2;
-
-    font-size: 21px;
-
-    margin-bottom: 35px;
-}
-
-
-/* =========================
-   SEARCH
-========================= */
+/* ================= SEARCH ================= */
 
 .search-box {
-    width: 620px;
-    max-width: 90%;
 
-    margin: auto;
+    position: relative;
+
+    z-index: 2;
 
     display: flex;
 
-    background: #fff;
+    width: min(590px, 90%);
 
-    border-radius: 40px;
+    height: 58px;
 
-    overflow: hidden;
+    margin-top: 38px;
 
-    border: 3px solid #f2e7d9;
+    background: white;
+
+    border-radius: 35px;
+
+    padding: 5px;
 
     box-shadow:
-        0 5px 25px rgba(0, 0, 0, 0.25);
+        0 10px 35px rgba(0,0,0,0.25);
+
 }
 
 
 .search-box input {
+
     flex: 1;
 
     border: none;
 
     outline: none;
 
-    padding: 18px 25px;
+    padding: 0 25px;
 
-    font-size: 16px;
+    font-family: "Cormorant Garamond", serif;
 
-    font-family: Georgia, serif;
+    font-size: 18px;
+
+    color: #54101f;
+
+    border-radius: 30px;
+}
+
+
+.search-box input::placeholder {
+    color: #8a7a7a;
 }
 
 
 .search-box button {
-    width: 70px;
+
+    width: 50px;
+    height: 50px;
 
     border: none;
 
-    background: #701c35;
+    border-radius: 50%;
+
+    background: #8d243d;
 
     color: white;
 
@@ -226,54 +300,60 @@ body {
 
 
 .search-box button:hover {
-    background: #4e0e21;
+
+    background: #641226;
+
+    transform: scale(1.05);
 }
 
 
-/* =========================
-   SECTIONS
-========================= */
+/* ================= LATEST SECTION ================= */
 
-.section {
-    padding: 70px 8%;
+.latest-section {
 
-    min-height: 400px;
+    padding: 70px 6% 90px;
 
-    background: #f8f4f2;
+    background: #fffafa;
 }
 
 
 .section-title {
+
     text-align: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 
 
 .section-title h2 {
-    font-size: 42px;
 
-    font-weight: normal;
+    font-family: "Cormorant Garamond", serif;
 
-    color: #68182f;
+    font-size: 48px;
+
+    font-weight: 700;
+
+    color: #8c243d;
 }
 
 
-.title-decoration {
+.ornament {
+
     margin-top: 10px;
 
-    color: #9b5c55;
+    color: #a3475b;
 
-    font-size: 20px;
+    font-size: 19px;
+
+    letter-spacing: 3px;
 }
 
 
-/* =========================
-   NOVEL GRID
-========================= */
+/* ================= NOVEL GRID ================= */
 
-.grid {
-    max-width: 1200px;
+.novels-grid {
+
+    max-width: 1400px;
 
     margin: auto;
 
@@ -286,99 +366,119 @@ body {
 }
 
 
-/* =========================
-   NOVEL CARD
-========================= */
+/* ================= NOVEL CARD ================= */
 
 .card {
+
     background: white;
 
-    border-radius: 8px;
+    border-radius: 12px;
 
     overflow: hidden;
 
-    box-shadow:
-        0 5px 20px rgba(60, 10, 20, 0.12);
+    border: 1px solid #ead8d8;
 
-    transition: 0.3s;
+    box-shadow:
+        0 8px 25px rgba(82, 13, 29, 0.08);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
 }
 
 
 .card:hover {
+
     transform: translateY(-8px);
 
     box-shadow:
-        0 10px 30px rgba(60, 10, 20, 0.2);
+        0 15px 35px rgba(82, 13, 29, 0.18);
 }
 
 
 .card img {
+
     width: 100%;
 
-    height: 320px;
+    height: 310px;
 
     object-fit: cover;
+
+    display: block;
 }
 
 
 .card-content {
+
     padding: 20px;
+
+    text-align: center;
 }
 
 
 .card-content h3 {
-    color: #65172e;
 
-    font-size: 21px;
+    font-size: 24px;
 
-    margin-bottom: 10px;
+    color: #651326;
+
+    margin-bottom: 8px;
 }
 
 
 .card-content p {
-    color: #777;
 
-    font-size: 14px;
+    color: #80656b;
+
+    font-size: 17px;
 
     margin-bottom: 18px;
 }
 
 
 .read-btn {
+
     display: inline-block;
 
-    padding: 10px 20px;
+    padding: 10px 25px;
 
-    background: #68182f;
+    background: #7f1d35;
 
     color: white;
 
     text-decoration: none;
 
-    border-radius: 4px;
+    border-radius: 25px;
+
+    font-size: 16px;
 
     transition: 0.3s;
 }
 
 
 .read-btn:hover {
-    background: #3f0b19;
+
+    background: #551021;
+
+    transform: translateY(-2px);
 }
 
 
-/* =========================
-   GENRES
-========================= */
+/* ================= GENRES ================= */
 
 .genres-section {
-    padding: 70px 8%;
 
-    background: #eee5e2;
+    padding: 70px 20px 90px;
+
+    background: #f7eeee;
+
+    text-align: center;
 }
 
 
-.genres {
-    max-width: 900px;
+.genres-container {
+
+    max-width: 1000px;
 
     margin: auto;
 
@@ -392,109 +492,168 @@ body {
 }
 
 
-.genres a {
+.genre {
+
     text-decoration: none;
 
-    color: #68182f;
+    color: #73172f;
 
     background: white;
 
-    border: 1px solid #cda89a;
+    border: 1px solid #dcbcc4;
 
-    padding: 13px 25px;
+    padding: 12px 25px;
 
     border-radius: 30px;
+
+    font-size: 18px;
 
     transition: 0.3s;
 }
 
 
-.genres a:hover {
-    background: #68182f;
+.genre:hover {
+
+    background: #7f1d35;
 
     color: white;
+
+    border-color: #7f1d35;
+
+    transform: translateY(-3px);
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* ================= FOOTER ================= */
 
 footer {
-    background: #280611;
 
-    color: #f4dfc0;
+    background: #420b18;
+
+    color: #fff1e8;
 
     text-align: center;
 
     padding: 35px 20px;
+
+    font-size: 17px;
 }
 
 
-.footer-decoration {
-    color: #d8a25e;
+.footer-ornament {
+
+    color: #e7b99f;
 
     margin-bottom: 15px;
 
-    font-size: 20px;
+    letter-spacing: 5px;
 }
 
 
-footer p {
+.footer-subtitle {
+
+    margin-top: 5px;
+
+    color: #e3bdb5;
+
     font-size: 15px;
 }
 
 
-.footer-small {
-    margin-top: 8px;
-
-    color: #b9948c;
-
-    font-size: 13px;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
+
+    .top-header {
+        padding: 15px 20px;
+    }
+
 
     .nav-container {
         flex-direction: column;
 
-        gap: 15px;
+        gap: 12px;
     }
 
-    .menu {
+
+    .navigation {
         gap: 18px;
     }
 
-    .nav-logo {
-        font-size: 21px;
+
+    .navigation a {
+        font-size: 15px;
     }
+
 
     .hero {
-        min-height: 480px;
+        min-height: 430px;
+
+        padding: 60px 15px;
     }
+
 
     .hero h1 {
-        font-size: 43px;
+        font-size: 65px;
     }
 
-    .hero p {
-        font-size: 17px;
+
+    .hero-subtitle {
+        font-size: 18px;
+
+        max-width: 450px;
     }
 
-    .gold-line {
-        width: 220px;
-    }
 
     .search-box {
-        width: 90%;
+        width: 95%;
     }
 
+
     .section-title h2 {
-        font-size: 34px;
+        font-size: 38px;
     }
+
+
+    .latest-section {
+        padding: 55px 20px;
+    }
+
+
+    .novels-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .card img {
+        height: 250px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+
+    .top-decoration {
+        font-size: 15px;
+    }
+
+
+    .novels-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .card img {
+        height: 350px;
+    }
+
 }
