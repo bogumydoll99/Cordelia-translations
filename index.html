@@ -8,24 +8,36 @@
     <title>Cordélia Translations</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Elegant Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="navbar">
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
 
         <div class="nav-container">
 
-            <div class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 Cordélia Translations
-            </div>
+            </a>
 
-            <nav class="menu">
+            <nav class="navigation">
+
                 <a href="index.html">Home</a>
-                <a href="#novels">Novels</a>
+
+                <a href="#latest">Novels</a>
+
                 <a href="#genres">Genres</a>
+
                 <a href="#latest">Latest</a>
+
             </nav>
 
         </div>
@@ -33,105 +45,141 @@
     </header>
 
 
-    <!-- Hero Section -->
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
 
-        <div class="hero-content">
+        <div class="hero-decoration top-decoration">
+            ✦ ───────── ❧ ✧ ❧ ───────── ✦
+        </div>
 
-            <div class="ornament">✦</div>
+        <h1>
+            Cordélia Translations
+        </h1>
 
-            <h1>Cordélia Translations</h1>
+        <p class="hero-subtitle">
+            Your Destination for the Best Chinese Translated Novels
+        </p>
 
-            <div class="gold-line"></div>
+        <div class="search-box">
 
-            <p>
-                Your Destination for the Best Chinese Translated Novels
-            </p>
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Chinese novels..."
+            >
 
-            <div class="search-box">
+            <button id="search-button">
+                🔍
+            </button>
 
-                <input
-                    type="text"
-                    id="search"
-                    placeholder="Search Chinese novels..."
-                >
+        </div>
 
-                <button type="button">
-                    🔍
-                </button>
-
-            </div>
-
+        <div class="hero-decoration bottom-decoration">
+            ✦
         </div>
 
     </section>
 
 
-    <!-- Latest Novels -->
-    <section class="section" id="latest">
+    <!-- ================= LATEST NOVELS ================= -->
+
+    <section class="latest-section" id="latest">
 
         <div class="section-title">
 
-            <h2>Latest Novels</h2>
+            <h2>
+                Latest Novels
+            </h2>
 
-            <div class="title-decoration">
-                ───── ❧ ─────
+            <div class="ornament">
+                ───── ❧ ✦ ❧ ─────
             </div>
 
         </div>
 
-        <div class="grid" id="novels-container">
+
+        <div
+            class="novels-grid"
+            id="novels-container"
+        >
+
+            <!-- Novels will appear here -->
+
         </div>
 
     </section>
 
 
-    <!-- Genres -->
+    <!-- ================= GENRES ================= -->
+
     <section class="genres-section" id="genres">
 
         <div class="section-title">
 
-            <h2>Explore Genres</h2>
+            <h2>
+                Explore Genres
+            </h2>
 
-            <div class="title-decoration">
-                ───── ❧ ─────
+            <div class="ornament">
+                ───── ❧ ✦ ❧ ─────
             </div>
 
         </div>
 
-        <div class="genres">
 
-            <a href="#">Romance</a>
-            <a href="#">Historical</a>
-            <a href="#">Revenge</a>
-            <a href="#">Fantasy</a>
-            <a href="#">Drama</a>
-            <a href="#">Comedy</a>
+        <div class="genres-container">
+
+            <a href="#" class="genre">
+                Romance
+            </a>
+
+            <a href="#" class="genre">
+                Historical
+            </a>
+
+            <a href="#" class="genre">
+                Revenge
+            </a>
+
+            <a href="#" class="genre">
+                Fantasy
+            </a>
+
+            <a href="#" class="genre">
+                Drama
+            </a>
+
+            <a href="#" class="genre">
+                Comedy
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
-        <div class="footer-decoration">
-            ✦ ───────── ✦
+        <div class="footer-ornament">
+            ✦ ───────── ✦ ───────── ✦
         </div>
 
         <p>
             © 2026 Cordélia Translations. All rights reserved.
         </p>
 
-        <p class="footer-small">
+        <p class="footer-subtitle">
             Chinese Novel Translations
         </p>
 
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- ================= JAVASCRIPT ================= -->
+
     <script src="js/data/novels.js"></script>
     <script src="js/app.js"></script>
 
