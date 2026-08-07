@@ -1,15 +1,4 @@
-/* =====================================================
-   CORDELIA TRANSLATIONS
-   Luxury Chinese Novel Translation Website
-   ===================================================== */
-
-
-/* ================= GOOGLE FONTS ================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
-
-
-/* ================= GENERAL ================= */
 
 * {
     margin: 0;
@@ -17,16 +6,15 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
-    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+    font-family: "Cormorant Garamond", Georgia, serif;
     background: #faf7f7;
-    color: #3b101b;
+    color: #5b1021;
 }
 
 
@@ -34,13 +22,12 @@ body {
 
 .top-header {
     width: 100%;
-    background: #5b0d1d;
-    padding: 18px 6%;
-    border-bottom: 1px solid rgba(255, 220, 190, 0.2);
+    background: #4b0b19;
+    padding: 18px 40px;
 }
 
-
 .nav-container {
+    width: 100%;
     max-width: 1400px;
     margin: auto;
 
@@ -49,157 +36,136 @@ body {
     align-items: center;
 }
 
-
 .nav-logo {
-    color: #fff4e8;
+    color: #f6dfc7;
     text-decoration: none;
-
-    font-family: "Cormorant Garamond", serif;
-    font-size: 25px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 24px;
     font-weight: 700;
 }
 
-
 .navigation {
     display: flex;
-    gap: 35px;
+    gap: 30px;
 }
-
 
 .navigation a {
-    color: #fff4e8;
+    color: #f6dfc7;
     text-decoration: none;
-
+    font-family: "Cormorant Garamond", Georgia, serif;
     font-size: 17px;
     font-weight: 600;
-
-    transition: 0.3s;
 }
 
-
 .navigation a:hover {
-    color: #e7b9a2;
+    color: #ffffff;
 }
 
 
 /* ================= HERO ================= */
 
 .hero {
-
+    width: 100%;
     min-height: 500px;
 
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
 
     text-align: center;
 
+    position: relative;
     overflow: hidden;
+
+    padding: 70px 20px;
 
     background:
         radial-gradient(
             circle at center,
-            #8c243d 0%,
-            #681124 45%,
-            #430914 100%
+            #8d2942 0%,
+            #681326 42%,
+            #430813 100%
         );
 
-    color: white;
-
-    padding: 80px 20px;
+    color: #fff;
 }
 
 
-/* decorative glow */
+/* decorative flowers */
 
 .hero::before {
-    content: "";
-
+    content: "✿";
     position: absolute;
+    left: 35px;
+    top: 80px;
 
-    width: 700px;
-    height: 700px;
+    font-size: 100px;
 
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(203, 86, 105, 0.18),
-            transparent 70%
-        );
-
-    pointer-events: none;
+    color: rgba(230, 145, 155, 0.13);
 }
-
-
-/* floral-like decoration */
 
 .hero::after {
-    content: "❧";
-
+    content: "✿";
     position: absolute;
+    right: 35px;
+    bottom: 55px;
 
-    left: 5%;
-    top: 18%;
+    font-size: 100px;
 
-    font-size: 150px;
-
-    color: rgba(226, 137, 144, 0.12);
-
-    transform: rotate(-20deg);
-
-    pointer-events: none;
+    color: rgba(230, 145, 155, 0.13);
 }
 
+
+/* ================= DECORATION ================= */
 
 .top-decoration {
-    color: #f2d0b3;
+    position: relative;
+    z-index: 2;
 
-    font-size: 23px;
+    color: #f2d1a9;
 
-    letter-spacing: 5px;
+    font-size: 22px;
 
-    margin-bottom: 20px;
+    letter-spacing: 4px;
 
-    opacity: 0.95;
+    margin-bottom: 15px;
 }
 
-
 .bottom-decoration {
-    margin-top: 25px;
-
-    color: #f2d0b3;
+    color: #f2d1a9;
 
     font-size: 20px;
+
+    margin-top: 22px;
 }
 
 
 /* ================= MAIN TITLE ================= */
 
 .hero h1 {
-
     position: relative;
-
     z-index: 2;
 
-    font-family: "Allura", cursive;
+    display: block;
 
-    font-size: clamp(70px, 8vw, 125px);
+    width: 100%;
+
+    font-family: "Allura", "Brush Script MT", cursive !important;
+
+    font-size: clamp(70px, 8vw, 115px);
 
     font-weight: 400;
 
-    line-height: 1;
+    line-height: 1.05;
 
-    color: #fff0dc;
+    white-space: nowrap;
+
+    color: #ffe9ce;
 
     text-shadow:
-        0 2px 8px rgba(0,0,0,0.25),
-        0 0 25px rgba(255, 210, 180, 0.15);
+        0 2px 5px rgba(0,0,0,0.25),
+        0 0 20px rgba(255,220,190,0.2);
 
     margin: 0;
 }
@@ -208,29 +174,27 @@ body {
 /* ================= SUBTITLE ================= */
 
 .hero-subtitle {
-
     position: relative;
-
     z-index: 2;
 
     margin-top: 25px;
 
-    font-size: 23px;
+    font-family: "Cormorant Garamond", Georgia, serif;
 
-    font-weight: 500;
+    font-size: 21px;
 
-    color: #fff2e8;
+    font-weight: 600;
 
-    letter-spacing: 0.5px;
+    color: #fff1e7;
+
+    text-align: center;
 }
 
 
 /* ================= SEARCH ================= */
 
 .search-box {
-
     position: relative;
-
     z-index: 2;
 
     display: flex;
@@ -239,7 +203,7 @@ body {
 
     height: 58px;
 
-    margin-top: 38px;
+    margin-top: 35px;
 
     background: white;
 
@@ -248,38 +212,33 @@ body {
     padding: 5px;
 
     box-shadow:
-        0 10px 35px rgba(0,0,0,0.25);
-
+        0 10px 30px rgba(0,0,0,0.25);
 }
 
-
 .search-box input {
-
     flex: 1;
 
-    border: none;
+    min-width: 0;
 
+    border: none;
     outline: none;
 
-    padding: 0 25px;
+    padding: 0 24px;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: Arial, sans-serif;
 
-    font-size: 18px;
+    font-size: 15px;
 
     color: #54101f;
 
-    border-radius: 30px;
+    background: transparent;
 }
-
 
 .search-box input::placeholder {
-    color: #8a7a7a;
+    color: #888;
 }
 
-
 .search-box button {
-
     width: 50px;
     height: 50px;
 
@@ -287,72 +246,60 @@ body {
 
     border-radius: 50%;
 
-    background: #8d243d;
+    background: #921f3c;
 
     color: white;
 
-    font-size: 20px;
+    font-size: 19px;
 
     cursor: pointer;
-
-    transition: 0.3s;
 }
-
 
 .search-box button:hover {
-
-    background: #641226;
-
-    transform: scale(1.05);
+    background: #681226;
 }
 
 
-/* ================= LATEST SECTION ================= */
+/* ================= SECTIONS ================= */
 
 .latest-section {
+    width: 100%;
 
-    padding: 70px 6% 90px;
+    padding: 70px 5% 90px;
 
     background: #fffafa;
 }
 
-
 .section-title {
-
     text-align: center;
 
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 }
 
-
 .section-title h2 {
-
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", Georgia, serif;
 
     font-size: 48px;
 
     font-weight: 700;
 
-    color: #8c243d;
+    color: #851c38;
 }
 
-
 .ornament {
-
     margin-top: 10px;
 
-    color: #a3475b;
+    color: #d2a05d;
 
-    font-size: 19px;
+    font-size: 20px;
 
     letter-spacing: 3px;
 }
 
 
-/* ================= NOVEL GRID ================= */
+/* ================= NOVELS ================= */
 
 .novels-grid {
-
     max-width: 1400px;
 
     margin: auto;
@@ -365,39 +312,29 @@ body {
     gap: 30px;
 }
 
-
-/* ================= NOVEL CARD ================= */
-
 .card {
-
     background: white;
 
     border-radius: 12px;
 
     overflow: hidden;
 
-    border: 1px solid #ead8d8;
+    border: 1px solid #ead6d6;
 
     box-shadow:
-        0 8px 25px rgba(82, 13, 29, 0.08);
+        0 8px 25px rgba(70,10,25,0.10);
 
-    transition:
-        transform 0.3s,
-        box-shadow 0.3s;
+    transition: 0.3s;
 }
-
 
 .card:hover {
-
-    transform: translateY(-8px);
+    transform: translateY(-7px);
 
     box-shadow:
-        0 15px 35px rgba(82, 13, 29, 0.18);
+        0 15px 35px rgba(70,10,25,0.18);
 }
 
-
 .card img {
-
     width: 100%;
 
     height: 310px;
@@ -407,77 +344,56 @@ body {
     display: block;
 }
 
-
 .card-content {
-
     padding: 20px;
 
     text-align: center;
 }
 
-
 .card-content h3 {
-
     font-size: 24px;
 
-    color: #651326;
+    color: #641326;
 
     margin-bottom: 8px;
 }
 
-
 .card-content p {
-
-    color: #80656b;
-
     font-size: 17px;
+
+    color: #80636b;
 
     margin-bottom: 18px;
 }
 
-
 .read-btn {
-
     display: inline-block;
 
     padding: 10px 25px;
 
-    background: #7f1d35;
+    background: #7f1c35;
 
     color: white;
 
     text-decoration: none;
 
     border-radius: 25px;
-
-    font-size: 16px;
-
-    transition: 0.3s;
-}
-
-
-.read-btn:hover {
-
-    background: #551021;
-
-    transform: translateY(-2px);
 }
 
 
 /* ================= GENRES ================= */
 
 .genres-section {
+    width: 100%;
 
     padding: 70px 20px 90px;
 
-    background: #f7eeee;
+    background: #f6eded;
 
     text-align: center;
 }
 
-
 .genres-container {
-
     max-width: 1000px;
 
     margin: auto;
@@ -491,70 +407,61 @@ body {
     gap: 15px;
 }
 
-
 .genre {
-
-    text-decoration: none;
-
-    color: #73172f;
-
-    background: white;
-
-    border: 1px solid #dcbcc4;
+    display: inline-block;
 
     padding: 12px 25px;
 
+    background: white;
+
+    border: 1px solid #d9b9c0;
+
     border-radius: 30px;
 
-    font-size: 18px;
+    color: #74162e;
 
-    transition: 0.3s;
+    text-decoration: none;
+
+    font-size: 18px;
 }
 
-
 .genre:hover {
-
-    background: #7f1d35;
+    background: #7f1c35;
 
     color: white;
-
-    border-color: #7f1d35;
-
-    transform: translateY(-3px);
 }
 
 
 /* ================= FOOTER ================= */
 
 footer {
+    width: 100%;
 
-    background: #420b18;
+    padding: 35px 20px;
 
-    color: #fff1e8;
+    background: #410914;
+
+    color: #fff1e7;
 
     text-align: center;
 
-    padding: 35px 20px;
+    font-family: "Cormorant Garamond", Georgia, serif;
 
     font-size: 17px;
 }
 
-
 .footer-ornament {
+    color: #e5bd91;
 
-    color: #e7b99f;
+    margin-bottom: 12px;
 
-    margin-bottom: 15px;
-
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 }
 
-
 .footer-subtitle {
-
     margin-top: 5px;
 
-    color: #e3bdb5;
+    color: #dcb7b7;
 
     font-size: 15px;
 }
@@ -568,92 +475,59 @@ footer {
         padding: 15px 20px;
     }
 
-
     .nav-container {
         flex-direction: column;
 
         gap: 12px;
     }
 
-
     .navigation {
-        gap: 18px;
+        gap: 20px;
     }
-
-
-    .navigation a {
-        font-size: 15px;
-    }
-
 
     .hero {
-        min-height: 430px;
-
-        padding: 60px 15px;
+        min-height: 450px;
     }
-
 
     .hero h1 {
         font-size: 65px;
-    }
 
+        white-space: normal;
+    }
 
     .hero-subtitle {
         font-size: 18px;
 
-        max-width: 450px;
+        max-width: 500px;
     }
-
 
     .search-box {
         width: 95%;
     }
 
-
     .section-title h2 {
-        font-size: 38px;
+        font-size: 40px;
     }
-
-
-    .latest-section {
-        padding: 55px 20px;
-    }
-
 
     .novels-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
         gap: 15px;
     }
-
-
-    .card img {
-        height: 250px;
-    }
-
 }
 
 
 @media (max-width: 480px) {
 
     .hero h1 {
-        font-size: 52px;
+        font-size: 55px;
     }
-
-
-    .top-decoration {
-        font-size: 15px;
-    }
-
 
     .novels-grid {
         grid-template-columns: 1fr;
     }
 
-
     .card img {
         height: 350px;
     }
-
 }
