@@ -1,112 +1,500 @@
+/* =========================
+   CORDÉLIA TRANSLATIONS
+   Main Style
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: #f8f5f5;
-    color: #2b1a1f;
+html {
+    scroll-behavior: smooth;
 }
 
-/* Header */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f8f4f2;
+    color: #4b0d1b;
+}
 
-header {
-    background: #5b1725;
-    color: white;
-    padding: 18px 7%;
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    background: #280611;
+    border-bottom: 1px solid #9c6a55;
+    padding: 18px 0;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.nav-logo {
+    color: #f7dfb0;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-nav {
+.menu {
     display: flex;
-    gap: 25px;
+    gap: 35px;
 }
 
-nav a {
-    color: white;
+.menu a {
+    color: #f7dfb0;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
+
+    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #e8c7ce;
+.menu a:hover {
+    color: white;
 }
 
-/* Hero */
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    background: linear-gradient(
-        135deg,
-        #5b1725,
-        #7b2638
-    );
+    min-height: 500px;
 
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
-    padding: 90px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #741d35 0%,
+            #520f23 45%,
+            #300713 100%
+        );
+
+    position: relative;
+    overflow: hidden;
 }
 
+
+/* Decorative flowers / light effect */
+
+.hero::before {
+    content: "❀";
+    position: absolute;
+    left: 40px;
+    top: 70px;
+
+    font-size: 120px;
+    color: rgba(205, 137, 128, 0.12);
+}
+
+.hero::after {
+    content: "❀";
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+
+    font-size: 140px;
+    color: rgba(205, 137, 128, 0.12);
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1000px;
+}
+
+
+.ornament {
+    color: #e8bd79;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+
 .hero h1 {
+    color: #f8dfb0;
+
+    font-size: 70px;
+
+    font-weight: normal;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 10px rgba(255, 220, 170, 0.4);
+}
+
+
+.gold-line {
+    width: 400px;
+    height: 2px;
+
+    margin: 18px auto;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        #d7a65f,
+        transparent
+    );
+}
+
+
+.hero p {
+    color: #f4e6d2;
+
+    font-size: 21px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+    width: 620px;
+    max-width: 90%;
+
+    margin: auto;
+
+    display: flex;
+
+    background: #fff;
+
+    border-radius: 40px;
+
+    overflow: hidden;
+
+    border: 3px solid #f2e7d9;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.search-box input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    padding: 18px 25px;
+
+    font-size: 16px;
+
+    font-family: Georgia, serif;
+}
+
+
+.search-box button {
+    width: 70px;
+
+    border: none;
+
+    background: #701c35;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.search-box button:hover {
+    background: #4e0e21;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 70px 8%;
+
+    min-height: 400px;
+
+    background: #f8f4f2;
+}
+
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.section-title h2 {
     font-size: 42px;
+
+    font-weight: normal;
+
+    color: #68182f;
+}
+
+
+.title-decoration {
+    margin-top: 10px;
+
+    color: #9b5c55;
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   NOVEL GRID
+========================= */
+
+.grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 30px;
+}
+
+
+/* =========================
+   NOVEL CARD
+========================= */
+
+.card {
+    background: white;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(60, 10, 20, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 30px rgba(60, 10, 20, 0.2);
+}
+
+
+.card img {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+}
+
+
+.card-content {
+    padding: 20px;
+}
+
+
+.card-content h3 {
+    color: #65172e;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.card-content p {
+    color: #777;
+
+    font-size: 14px;
+
     margin-bottom: 18px;
 }
 
-.hero p {
-    font-size: 17px;
-    margin-bottom: 30px;
+
+.read-btn {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background: #68182f;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
 }
 
-#search {
-    width: 90%;
-    max-width: 550px;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    outline: none;
+
+.read-btn:hover {
+    background: #3f0b19;
 }
 
-/* Novels */
 
-.novels {
-    max-width: 1200px;
+/* =========================
+   GENRES
+========================= */
+
+.genres-section {
+    padding: 70px 8%;
+
+    background: #eee5e2;
+}
+
+
+.genres {
+    max-width: 900px;
+
     margin: auto;
-    padding: 60px 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
 }
 
-.novels h2 {
-    font-size: 30px;
-    color: #5b1725;
-    margin-bottom: 30px;
+
+.genres a {
+    text-decoration: none;
+
+    color: #68182f;
+
+    background: white;
+
+    border: 1px solid #cda89a;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
 }
 
-/* Novel Grid */
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fill,
-        minmax(220px, 1fr)
-    );
-    gap: 25px;
+.genres a:hover {
+    background: #68182f;
+
+    color: white;
 }
 
-/* Footer */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    background: #3a1019;
-    color: white;
+    background: #280611;
+
+    color: #f4dfc0;
+
     text-align: center;
-    padding: 30px;
-    margin-top: 50px;
+
+    padding: 35px 20px;
+}
+
+
+.footer-decoration {
+    color: #d8a25e;
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+
+footer p {
+    font-size: 15px;
+}
+
+
+.footer-small {
+    margin-top: 8px;
+
+    color: #b9948c;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 18px;
+    }
+
+    .nav-logo {
+        font-size: 21px;
+    }
+
+    .hero {
+        min-height: 480px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .gold-line {
+        width: 220px;
+    }
+
+    .search-box {
+        width: 90%;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
 }
