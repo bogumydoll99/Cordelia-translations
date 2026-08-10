@@ -311,3 +311,304 @@ footer {
         font-size: 34px;
     }
 }
+/* =========================================
+   CORDELIA TRANSLATIONS - STORE
+   ========================================= */
+
+.store-hero {
+    background: linear-gradient(135deg, #4b071b, #7d1735, #4b071b);
+    color: #f7d98a;
+    text-align: center;
+    padding: 80px 20px 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.store-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    margin: 15px 0;
+    color: #f7d98a;
+    letter-spacing: 1px;
+}
+
+.store-hero p {
+    color: #fff5df;
+    font-size: 18px;
+    margin: 10px auto 20px;
+}
+
+.store-decoration {
+    color: #f2c76e;
+    font-size: 22px;
+}
+
+
+/* STORE SECTION */
+
+.store-section {
+    background: #fffaf7;
+    padding: 70px 7%;
+    min-height: 600px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    color: #70152f;
+    margin-bottom: 12px;
+}
+
+.title-decoration {
+    color: #d7a84d;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #6e5960;
+    font-size: 16px;
+}
+
+
+/* STORE GRID */
+
+.store-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 35px;
+}
+
+
+/* STORE CARD */
+
+.store-card {
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    border: 1px solid #ead7c7;
+
+    box-shadow: 0 8px 25px rgba(75, 7, 27, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.store-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(75, 7, 27, 0.20);
+}
+
+
+/* BOOK COVER */
+
+.book-cover {
+    height: 360px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #4a071b,
+            #781832,
+            #4a071b
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    position: relative;
+
+    border-bottom: 3px solid #d9ad55;
+}
+
+.book-cover h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    line-height: 1.3;
+
+    color: #f6d88b;
+
+    margin: 20px 0 10px;
+}
+
+.book-cover p {
+    color: #fff1d1;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+.cover-decoration {
+    color: #f0c568;
+
+    font-size: 25px;
+}
+
+
+/* CARD CONTENT */
+
+.store-content {
+    padding: 25px;
+}
+
+.store-content h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #70152f;
+
+    font-size: 24px;
+
+    margin: 0 0 8px;
+}
+
+.store-genre {
+    color: #b18439;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.store-description {
+    color: #665b5f;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    min-height: 75px;
+}
+
+
+/* PRICE + BUTTON */
+
+.store-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eadfd8;
+}
+
+.price {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #70152f;
+}
+
+.buy-btn {
+    display: inline-block;
+
+    background: #70152f;
+
+    color: #f8dda0;
+
+    text-decoration: none;
+
+    padding: 11px 20px;
+
+    border-radius: 25px;
+
+    border: 1px solid #d6a94d;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+    background: #d6a94d;
+
+    color: #4b071b;
+
+    transform: translateY(-2px);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #420619;
+
+    color: #f5d88c;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+.footer-decoration {
+    color: #d9ad55;
+
+    margin-bottom: 15px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .store-hero {
+        padding: 60px 20px;
+    }
+
+    .store-hero h1 {
+        font-size: 38px;
+    }
+
+    .store-hero p {
+        font-size: 15px;
+    }
+
+    .store-section {
+        padding: 50px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .book-cover {
+        height: 330px;
+    }
+
+    .store-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
